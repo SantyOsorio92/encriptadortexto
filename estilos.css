@@ -1,7 +1,6 @@
 :root{
     --blue: #0A3871;
     --background: #F3F5FC;
-    --border: #2d1580;
 }
 
 *{
@@ -19,9 +18,11 @@
 main{
     display: flex;  
     padding: 2vh;
-    border: 10px solid black;
+   
     border-radius: 24px;
     height: 85vh;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+
 
    
 }
@@ -35,8 +36,6 @@ main{
     height: 80%;
     border-radius: 24px;
     text-align: center;
-    
-
 }
 
     ::placeholder{
@@ -72,7 +71,7 @@ section{
     color: var(--blue);    
     padding: 1vh;
     height: 80%;
-    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.2);
 }
     .mensaje:focus{
         outline: none;
@@ -82,33 +81,36 @@ section{
     display: flex;
     margin-top: 18px;
     gap: 2vh;
+    
 }
 
 .btn-desencriptar{
-    background: lightgray;
-    border: 1px solid var(--blue);
+    background: white;
+    border: none;
     border-radius: 24px;
     color: var(--blue);
     cursor: pointer;
     height: 5vh;
     width: 18vh;
     font-size: 0.7rem;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
 }
 
 .btn-encriptar{
     background-color: var(--blue);
-    border: 1px solid var(--blue);
+    border: none;
     border-radius: 24px;
     color: white;
     cursor: pointer;
     height: 5vh;
     width: 18vh;
     font-size: 0.7rem;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
 }
 
 
 .btn-copiar{
-    border: 1px solid var(--blue);
+    border: none;
     border-radius: 24px;
     color: var(--blue);
     cursor: pointer;
@@ -116,6 +118,7 @@ section{
     width: 18vh;
     font-size: 0.7rem;
     margin-top: 20%;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
 }
 
 .informacion{
